@@ -23,6 +23,7 @@ variable "account_replication_type" {
 variable "access_tier" {
   description = "Defines the access tier for BlobStorage and General Purpose v2 accounts. Valid options are 'Hot' and 'Cool'."
   type        = string
+  default     = "Hot"
 }
 variable "tags" {
   description = "A map of tags to assign to the resource."
